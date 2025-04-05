@@ -65,6 +65,7 @@ int main() {
 ex) int(정수형 변수) x(변수이름); -> int x;  
 - 핵심 개념 2  
 자료형이란 '데이터의 타입'  
+|-------|-------|-------|  
 |정수형|short, int, long, long|정수 저장|  
 |부동소수점형|float, double, long double|실수 저장|   
 |문자형|char|하나의 문자 저장|  
