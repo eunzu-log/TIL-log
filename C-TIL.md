@@ -139,9 +139,31 @@ ex) scanf_s(%d, &x)
  ## 🔍 예제 코드 / 실습  
   
   ```c
-  #include <stdio.h>
-  
-  int main() {
-  
-  }
+ #include <stdio.h>
+
+int main() {
+	//사용자로부터 소수점 표기 형식으로 실수를 읽어서 지수 형식으로 출력하는 프로그램을 작성하라
+	float x;
+	printf("실수를 입력하십시오: ");
+	scanf_s("%f", &x);
+	printf("\n지수 형식으로는 %e입니다.\n", x);
+	printf("계속하려면 아무 키나 누르십시오 . . .\n");
+
+	// 사용자에게 받은 문자의 아스키 코드를 출력하는 프로그램을 작성하라
+	char y;
+	printf("문자를 입력하십시오: ");
+	scanf_s("%c", &y, 1);
+	printf("\n아스키 코드: %d\n", y);
+	printf("계속하려면 아무 키나 누르십시오 . . \n");
+
+	//이번 장에서 학습한 모든 자료형의 크기를 sizeof 연산자를 사용하여 출력하는 프로그램을 작성하라
+	printf("char형의 크기는 %zu바이트입니다.\n", sizeof(char));
+	printf("short형의 크기는 %zu바이트입니다.\n", sizeof(short));
+	printf("int형의 크기는 %zu바이트입니다.\n", sizeof(int));
+	printf("long형의 크기는 %zu바이트입니다.\n", sizeof(long));
+	printf("long long형의 크기는 %zu바이트입니다.\n", sizeof(long long));
+	printf("float형의 크기는 %zu바이트입니다.\n", sizeof(float));
+	printf("double형의 크기는 %zu바이트입니다.\n", sizeof(double));
+	printf("long double형의 크기는 %zu바이트입니다.\n", sizeof(long double));
+}
   ```
